@@ -1,0 +1,40 @@
+--- src/desktop/qml/main.qml.orig	2013-03-19 20:08:18.818180181 +0530
++++ src/desktop/qml/main.qml	2013-03-15 16:15:27.109200993 +0530
+@@ -14,17 +14,19 @@
+  *   GNU Lesser General Public License for more details.                    *
+  ****************************************************************************/
+ 
+ import QtQuick 2.0
+ import Snowshoe 1.0
+ 
+ Item {
+     id: browserView
+-    state: "normal"
++    state: "fullscreen"
+ 
+     function focusUrlBar() {
+         urlBar.textInput.forceActiveFocus()
+         urlBar.textInput.selectAll()
+     }
+ 
+     function openTabWithUrl(url) {
+         var tab = _openEmptyTab()
+@@ -205,18 +207,19 @@ Item {
+         var savedUrls = StateTracker.urlsOpened.slice(0);
+         var commandLineUrls = BrowserWindow.urlsFromCommandLine;
+         if (!savedUrls.length && !commandLineUrls.length) {
+             _openEmptyTab();
+             return;
+         }
+ 
+         var i;
+-        for (i = 0; i < savedUrls.length; i++)
+-            openTabWithUrl(savedUrls[i]);
++         state = "fullscreen"
+ 
+         for (i = 0; i < commandLineUrls.length; i++)
+             openTabWithUrl(commandLineUrls[i]);
+ 
+     }
+ 
+     function _openEmptyTab() {
