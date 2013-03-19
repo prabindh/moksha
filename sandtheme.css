@@ -1,0 +1,122 @@
+body {
+	margin: 0;		
+	padding: 0;
+	background-color: #404040;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#second-row-activity{
+	width:85%;
+	height:80%;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -1;
+}
+
+#Target-OpenGL-view {
+	font: 1.0em Georgia;
+	margin-left:0px;
+	margin-right:0px;	
+	width:95%;
+	height:100%;	
+	z-index: -1;
+	color:#0094FF;
+	text-align:center;
+	border-radius: 5px;
+	border: 1px solid #00F8FF;
+	box-shadow: 0px 0px 10px #00F8FF;	
+	float:left;
+        overflow:hidden;
+}
+
+#Load-Frame::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+#third-row-activity{
+	font: 1.0em Georgia;
+	width:95%;
+	height:10%;
+	margin-left:auto;
+	margin-right:auto;	
+	margin-top:10px;	
+	z-index: -1;
+	color:#00f8FF;	
+}
+
+#previous-screen {
+	width:3%;
+	height:100%;	
+	z-index: -1;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:20px;
+	background-image:url('../images/prev1.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	float:left;
+}
+#next-screen {
+	width:3%;
+	height:100%;
+	z-index: -1;
+	margin-left:0px;
+	margin-right:0px;		
+	margin-top:20px;	
+	background-image:url('../images/next1.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	float:left;
+}
+
+#Target-Template-view {
+	margin-left:0px;
+	margin-right:0px;	
+	width:95%;
+	height:100%;	
+	z-index: -1;
+	background: #222;
+	color:#00f8FF;
+	text-align:center;
+	border-radius: 5px;
+	border: 1px solid #00f8FF;
+	box-shadow: 0px 0px 10px #00f8FF;
+	float:left;
+}
+
+#Target-Template {
+	font: 1.0em Georgia;
+	margin-left:0px;
+	margin-right:0px;	
+	width:15%;
+	height:95%;
+	z-index: -1;
+	background: #222;
+	background-repeat:no-repeat;	
+	background-size:contain;
+	color:#00f8FF;
+	text-align:center;
+	border-radius: 2px;
+	border: 2px solid #00f8FF;
+	box-shadow: 0px 0px 10px #00f8FF;	
+	float:left;
+}
+
+#Target-Template img
+{
+max-width:100%; 
+max-height:100%;
+margin:auto;
+display:block;
+}
+
+a:link {color:#00f8FF;}
+a:visited {color:#00f8FF;}
+a:hover {color:#00f8FF;background-color:#FFFFFF;}
+a:active {color:#00f8FF;}
